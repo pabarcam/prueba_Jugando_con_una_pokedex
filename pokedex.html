@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS-->
+  <link rel="stylesheet" href="assets\style.css">
+  <!--BOOTSTRAP Y POPPER-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  <!--JQUERY-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  
+  <!--AJAX-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--GRAFICO PLUG. CANVAS-->   
+  <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <title>PokeApi</title>
+</head>
+<body>
+  <h1><b>Pokédex</b></h1><br>
+  <div class="container">
+    <form action="">
+      <div class="fomr-group row">
+        <label for="" class="col-sm-6 mx-auto d-inline position-fixed"><b>Ingrese Nro de Pokemón:</b></label>
+        <input type="number" class="col-sm-6 mx-auto form-control d-inline " id="pokeId">
+      </div><br> 
+          <button type="submit" class="btn btn-primary" id="boton">Consultar</button>
+    </form><br>
+    <div class="form-group row">
+    <div class="col-sm-4">
+      <h2 id="name"></h2>
+      <img src="" alt="">
+    </div>
+    <div  class="col-sm-8 mx-auto" id="chartContainer" style="height: 300px; width: 100%;"></div>
+    </div>
+  </div>
+  <script src="pokedex.js"></script>
+</body>
+</html>
